@@ -1,0 +1,96 @@
+.card {
+    width: 100%;
+    max-width: 22em;
+    background-color: #fffc;
+    padding: 2em, 1.5em;
+    border-radius: 0.8em;
+}
+
+.card__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 0.2em;
+    margin-top: 0.9em;
+}
+
+.card__country {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.card__body {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.info {
+    display: grid;
+    gap: 1em;
+}
+
+.info__title {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    &::after,
+    &::before {
+        content: '"';
+    }
+}
+
+.info__list {
+    display: grid;
+    gap: 0.5em;
+
+}
+
+.info__item {
+    font-size: 0.9em;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.info__label {
+    color: #555;
+}
+
+.info__value {
+    font-weight: 500;
+}
+
+.card__temp {
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.card__btn {
+    margin-bottom: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    background-color: rgb(21, 88, 156);
+    color: white;
+    padding: 0.6em 2em;
+    border-radius: 1em;
+    &:hover {
+        filter: brightness(1.2);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card {
+        font-size: 1.2rem;
+    }
+}
+
